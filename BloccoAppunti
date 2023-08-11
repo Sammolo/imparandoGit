@@ -44,6 +44,9 @@ Rimuovere cambiamenti:
 
 Aggiungere una nuova versione, cioè caricare i cambiamenti precedenti:  
 	git commit -m "messaggio" 
+	
+Sovrascrivere la versione precedente
+	git commit --amend -m "messaggio"
 
 Riportare un file allo stato della versione precedente: 
 	git checkout -- <nome>
@@ -65,11 +68,20 @@ Collegarsi ad una remote repository:
 Rimuovere il collegamento alla remote repository:
 	git remote remove <nome>
 	
-Caricare il branch  su github: 
+Caricare e aggiornare il branch su github(password = token): 
 	git push origin master
 
+	--> shortcut: "git push origin master --set-upstream"  --> così le volte successive basterà scrivere solo "git push" perchè "origin master" lo prende in automatico
+	--> "-f" per forzare il caricamento
+	
+Aggiornare la repository(vedere se ci sono nuovi aggiornamenti sulla repository di github): 
+	git fetch
+	
+Scaricare nuove versioni da github: 
+	git pull <da dove vogliamo scaricare, origin(cioè github)> <quale branch vogliamo scaricare, master (quello principale)> 
 
-Scaricare il branch da github:
+Scaricare una repository da github: (crea una nuova cartella su desktop)
+	git clone <url> <eventuale nome cartella> 
 	
 	
 	
