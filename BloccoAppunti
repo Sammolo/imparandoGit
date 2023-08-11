@@ -1,0 +1,93 @@
+CODICE GENERALE UBUNTU
+Pulire terminale 
+	clear
+	
+Creare una cartella 
+	mkdir <nomeCartella>
+	
+Rimuovere una cartella
+	rmdir <nomeCartella>
+	
+Spostare qualcosa: 
+	mv <elemento> -t <destinazione>
+
+Avviare visual studio code da terminale: 
+	code <nome> 
+	
+Eseguire file Python: 
+	Python3 <nomeFile>
+	
+	
+	
+	
+GIT TUTORIAL
+	
+Iniziare una nuova repository: 
+	git init
+
+Vedere i cambiamenti fatti rispetto alla versione precedente 
+	git status
+	
+Vedere lo storico delle versioni: 
+	git log 
+	
+	--> quando lo storico dei cambiamenti è troppo lungo basta premere "q" per fermarsi
+	--> "--all" per mostare tutte le versioni
+	--> "--graph" per mostare le versioni a grafico (branches)	
+
+Aggiungere cambiamenti: 
+	git add <nome>    oppure      
+	git add . <-- aggiungere tutti non già presenti nella versione precedente
+	
+Rimuovere cambiamenti: 
+	git reset <nome> 
+
+Aggiungere una nuova versione, cioè caricare i cambiamenti precedenti:  
+	git commit -m "messaggio" 
+
+Riportare un file allo stato della versione precedente: 
+	git checkout -- <nome>
+
+Tornare indietro a una specifica versione: 
+	git checkout <commitHash>
+	
+	--> NB: se modifico una versione vecchia e la salvo creerò un branch
+	--> al posto di <commitHash> posso usare anche "master" o "head"
+
+Caricare una versione passata: 
+	git checkout <commitHash> <nome> 
+	
+	--> a differenza del metodo precedente non crea branches ma carica nella versione attuale
+	
+Collegarsi ad una remote repository: 
+	git remote add <nome, solitamente "origin"> <urlRemoteRepository>
+	
+Rimuovere il collegamento alla remote repository:
+	git remote remove <nome>
+	
+Caricare il branch  su github: 
+	git push origin master
+
+
+Scaricare il branch da github:
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+Rimuovere git dalla cartella:
+	rm -rf .git
+	
+File .gitignore serve per dire a git quali file non vogliamo che carichi
+
+
+
+
+
+Tutorial parte 1: https://www.youtube.com/watch?v=hrTQipWp6co
+Tutorial parte 2: https://www.youtube.com/watch?v=1ibmWyt8hfw    MINUTO 17
