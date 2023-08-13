@@ -81,6 +81,9 @@ Cambiare branch di lavoro:
 Unire due branch(attento a spostarti nel branch giusto prima di fare merge): 
 	git merge <branch che vogliamo unire al branch su cui stiamo lavorando> -m "messaggio"
 	
+	--> in caso di conflitti: modifica il file come meglio credi e fai la classica versione
+
+
 	
 	
 	
