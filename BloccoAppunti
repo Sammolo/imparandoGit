@@ -70,9 +70,16 @@ Caricare il branch  su github:
 
 
 Scaricare il branch da github:
+	git pull origin master
 	
+Creare un branch: 
+	git branch <nome>
 	
-	
+Cambiare branch di lavoro:
+	git checkout <nomeBranch>
+
+Unire due branch(attento a spostarti nel branch giusto prima di fare merge): 
+	git merge <branch che vogliamo unire al branch su cui stiamo lavorando>
 	
 	
 	
